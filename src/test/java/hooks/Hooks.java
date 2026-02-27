@@ -1,22 +1,18 @@
 package hooks;
 
-import org.openqa.selenium.WebDriver;
-
-import base.BaseTest;
-import io.cucumber.java.Before;
 import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import driver.DriverFactory;
 
-public class Hooks extends BaseTest {
+public class Hooks {
 
-
-	@Before
-    public void startScenario() {
-        setup();
+    @Before
+    public void setup() {
+        DriverFactory.initDriver();
     }
 
     @After
-    public void endScenario() {
-        tearDown();
+    public void teardown() {
+        DriverFactory.quitDriver();
     }
 }
-

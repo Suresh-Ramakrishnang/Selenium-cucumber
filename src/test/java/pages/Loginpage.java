@@ -2,11 +2,12 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import base.BaseTest;
+
+import driver.DriverFactory;
 
 
 
-public class Loginpage extends BaseTest{
+public class Loginpage extends DriverFactory{
 
 	WebDriver driver=getDriver();
 			
