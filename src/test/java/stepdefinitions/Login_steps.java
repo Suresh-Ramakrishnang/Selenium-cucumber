@@ -9,7 +9,7 @@ import pages.Loginpage;
 public class Login_steps {
 
 	@Given("User is on OpenCart homepage")
-	public login steps()
+	public void loginsteps()
 	{
 		
 	}
